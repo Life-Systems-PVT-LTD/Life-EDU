@@ -50,7 +50,7 @@ function Header() {
 
                     {/* navigations */}
 
-                    <div className='flex flex-row justify-between gap-14 items-center'>
+                    <div className='flex flex-row justify-between lg:gap-14 gap-10 items-center'>
 
                         <div className='lg:flex hidden'>
 
@@ -64,11 +64,13 @@ function Header() {
 
                         {/* dropDown */}
 
+                        {/* profile dropdown*/}                        
+
                         <div className='flex flex-row'>
 
                             <div className="relative inline-block text-left">
 
-                                <Image src={'/assets/icons/user.png'} width={40} height={30} alt='dropDown Icon' onClick={() => setOpen(!open)} className="inline-flex bg-white-100 rounded-2xl justify-center text-sm font-medium text-white" />
+                                <Image src={'/assets/icons/user.png'} width={40} height={30} alt='dropDown Icon' onClick={() => setOpen(!open)} className="inline-flex bg-white-100 rounded-2xl justify-center text-sm font-medium text-white cursor-pointer"/>
 
                                 {open && (
 
@@ -117,36 +119,48 @@ function Header() {
 
                         </div>
 
-                        <div className=''>
+                        {/* profile dropdown */}
 
-                            <div className='flex flex-row lg:hidden md:block relative'>
+                        {/* dropdown navigation sm */}                        
+
+                        <div className='flex flex-row lg:hidden'>
+
+                            <div className='lg:hidden md:block relative inline-block'>
 
                                 <CiMenuBurger onClick={() => setMenuOpen(!menuOpen)} className='w-5 h-5' />
 
                                 {menuOpen && (
 
-                                    <div className='absolute top-full left-0 w-60 bg-[#FFFFFF] mt-2 z-50'>
+                                    <div className='fixed top-[80px] right-0 w-60 bg-[#FFFFFF] mt-2 z-50 border drop-shadow-lg border-[#E9EEF4] rounded-sm'>
 
-                                        <div className='px-4 py-3 border-b border-[#E9EEF4]'>
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
 
-                                            <span className='text-[16px] font-semibold text-[#020817]'>User Name</span><br />
-                                            <span className='text-[13px] font-normal text-[#64748B]'>user Email Address</span>
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">Courses</Link>
 
                                         </div>
 
-                                    </div>                                    
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
 
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">About</Link>
 
+                                        </div>
 
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
+
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">Contact</Link>
+
+                                        </div>
+
+                                    </div>
                                 )}
 
                             </div>
 
-
                         </div>
 
-                        {/* dropDown */}
+                        {/* profile dropdown sm */}
 
+                        {/* dropDown */}
 
                     </div>
 
