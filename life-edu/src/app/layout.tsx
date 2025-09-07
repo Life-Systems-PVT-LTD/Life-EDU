@@ -30,19 +30,23 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
     <html lang="en">
 
-      <body className={`${inter.variable} antialiased`} >
+      <body className={`${inter.variable} antialiased min-h-screen flex flex-col`} >
 
         <div>
 
-          <Header/>
+          <Header />
 
         </div>
 
-        {children}
+        <div className="flex-grow">
+
+          {children}
+
+        </div>
 
         <div>
 
-        <Footer/>
+          <Footer />
 
         </div>
 
