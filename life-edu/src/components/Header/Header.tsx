@@ -20,7 +20,7 @@ function Header() {
 
             {/* main container */}
 
-            <div className='flex flex-col mb-9 p-4 bg-[#FFFFFF] backdrop-blur-lg opacity-90 backdrop-saturate-100 backdrop-contrast-100 border-[#E9EEF4] border-2 fixed w-full top-0 left-0 right-0'>
+            <div className='flex flex-col mb-9 p-4 bg-[#FFFFFF] backdrop-blur-lg opacity-90 backdrop-saturate-100 backdrop-contrast-100 fixed w-full top-0 left-0 right-0'>
 
                 {/* sub container */}
 
@@ -50,7 +50,7 @@ function Header() {
 
                     {/* navigations */}
 
-                    <div className='flex flex-row justify-between gap-14 items-center'>
+                    <div className='flex flex-row justify-between lg:gap-14 gap-9 items-center'>
 
                         <div className='lg:flex hidden'>
 
@@ -64,11 +64,13 @@ function Header() {
 
                         {/* dropDown */}
 
+                        {/* profile dropdown*/}
+
                         <div className='flex flex-row'>
 
                             <div className="relative inline-block text-left">
 
-                                <Image src={'/assets/icons/user.png'} width={40} height={30} alt='dropDown Icon' onClick={() => setOpen(!open)} className="inline-flex bg-white-100 rounded-2xl justify-center text-sm font-medium text-white" />
+                                <Image src={'/assets/icons/user.png'} width={40} height={30} alt='dropDown Icon' onClick={() => setOpen(!open)} className="inline-flex bg-white-100 rounded-2xl justify-center text-sm font-medium text-white cursor-pointer" />
 
                                 {open && (
 
@@ -117,33 +119,56 @@ function Header() {
 
                         </div>
 
-                        <div className=''>
+                        {/* profile dropdown */}
+
+                        {/* dropdown navigation sm */}
+
+                        <div className='flex flex-row lg:hidden'>
 
                             <div className='flex flex-row lg:hidden md:block relative'>
 
-                                <CiMenuBurger onClick={() => setMenuOpen(!menuOpen)} className='w-5 h-5' />
+                                <CiMenuBurger onClick={() => setMenuOpen(!menuOpen)} className='w-5 h-5 cursor-pointer' />
 
                                 {menuOpen && (
 
-                                    <div className='absolute top-full left-0 w-60 bg-[#FFFFFF] mt-2 z-50'>
+                                    <div className='absolute top-full right-0 w-60 bg-[#FFFFFF] border border-[#E9EEF4] rounded-sm mt-2 z-50'>
 
-                                        <div className='px-4 py-3 border-b border-[#E9EEF4]'>
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
 
-                                            <span className='text-[16px] font-semibold text-[#020817]'>User Name</span><br />
-                                            <span className='text-[13px] font-normal text-[#64748B]'>user Email Address</span>
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">Courses</Link>
 
                                         </div>
 
-                                    </div>                                    
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
 
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">About</Link>
 
+                                        </div>
 
+                                        <div className="py-1 px-2 text-[#020817] font-medium flex items-center hover:bg-gray-100">
+
+                                            <Link href="#" className="block px-4 py-2 text-sm text-gray-700">Contact</Link>
+
+                                        </div>
+
+                                        <div className="py-1 px-2 border-t border-[#E9EEF4] text-[#020817] font-medium flex items-center hover:bg-gray-100">
+
+                                            <Link href={'/'} className="block px-4 py-2 text-sm text-gray-700">
+
+                                                <LiaShoppingCartSolid className='w-7 h-7' />
+
+                                            </Link>
+
+                                        </div>
+
+                                    </div>
                                 )}
 
                             </div>
 
-
                         </div>
+                        
+                        {/* dropdown navigation sm */}
 
                         {/* dropDown */}
 
