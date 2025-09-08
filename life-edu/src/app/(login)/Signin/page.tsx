@@ -146,7 +146,7 @@ export default function SignIn() {
               Don’t have an account?{" "}
 
               <Link
-                href="#"
+                href="/Signup"
                 className="font-semibold text-[#020817] ext-[16px]"
               >
                 Sign up here
