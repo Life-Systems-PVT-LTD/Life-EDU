@@ -4,7 +4,7 @@ export default function Home() {
 
     <>
     
-      <div className="mt-20">Home Page</div>
+      <div className="mt-20">Home Page</div>      
 
     </>
 
