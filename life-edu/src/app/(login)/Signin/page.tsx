@@ -14,21 +14,21 @@ export default function SignIn() {
 
       {/* Main Container */}
 
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
 
         {/* Sub Container */}
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-4 ">
 
           {/* Welcome Title */}
 
-          <div className="text-center mb-6">
+          <div className="text-center mb-3 leading-10">
 
-            <h1 className="text-[40px] font-bold text-gray-900">
+            <h1 className="text-[30px] font-bold text-gray-900 ">
               Welcome back
             </h1>
 
-            <p className="text-[#64748B] text-[18px]">
+            <p className="text-[#64748B] text-[17px]">
               Sign in to your account to continue learning{" "}
             </p>
 
@@ -36,15 +36,15 @@ export default function SignIn() {
 
           {/* Sign In Card */}
 
-          <div className="bg-white shadow-md rounded-lg p-8 w-[581px] max-w-md">
+          <div className="bg-white shadow-md rounded-lg p-6 w-full ">
 
             {/* Sign In Header */}
 
-            <div className="mb-6 gap-2">
+            <div className="mb-6 leading-10">
 
               {/* Sign In Title */}
 
-              <h2 className="text-xl font-semibold text-black text-[32px]">
+              <h2 className="text-xl font-semibold text-black text-[26px]">
                 Sign In
               </h2>
 
@@ -59,12 +59,12 @@ export default function SignIn() {
             <form className="space-y-4">
 
               {/* Input Fields Container */}
-
-              <div className="space-y-5 mb-5">
+ 
+              <div className="space-y-5 mb-10 gap-5 flex flex-col">
 
                 {/* Email Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     htmlFor="email"
@@ -86,7 +86,7 @@ export default function SignIn() {
 
                 {/* Password Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     htmlFor="password"

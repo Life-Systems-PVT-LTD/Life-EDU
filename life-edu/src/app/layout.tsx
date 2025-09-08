@@ -26,9 +26,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
   return (
 
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
 
-      <body className={`${inter.variable} antialiased min-h-screen flex flex-col`} >        
+      <body suppressHydrationWarning className={`${inter.variable} antialiased min-h-screen flex flex-col`} >        
 
         <div className="flex-grow">
 

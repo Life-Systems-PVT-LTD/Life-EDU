@@ -15,7 +15,7 @@ export default function Signup() {
 
       {/* Main Container */}
 
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
 
         {/* Sub Container */}
 
@@ -25,11 +25,11 @@ export default function Signup() {
 
           <div className="text-center mb-6">
 
-            <h1 className="text-[40px] font-bold text-gray-900">
+            <h1 className="text-[30px] font-bold text-gray-900">
               Create Your account
             </h1>
 
-            <p className="text-[#64748B] text-[18px]">
+            <p className="text-[#64748B] text-[17px]">
               Join thousands of learners today
             </p>
 
@@ -37,19 +37,19 @@ export default function Signup() {
 
           {/* Sign UP Card */}
 
-          <div className="bg-white shadow-md rounded-lg p-8 w-[581px] max-w-md">
+          <div className="bg-white shadow-md rounded-lg p-8 lg:w-[581px] max-w-full">
 
             {/* Sign UP Header */}
 
-            <div className="mb-6 gap-2">
+            <div className="mb-6 leading-10">
 
               {/* Sign UP Title */}
 
-              <h2 className="text-xl font-semibold text-black text-[32px]">
+              <h2 className="text-xl font-semibold text-black text-[26px]">
                 Sign Up
               </h2>
 
-              <h2 className=" text-[#64748B] text-[16px]">
+              <h2 className=" text-[#64748B] text-[16px] ">
                 Create your account to start your learning journey
               </h2>
 
@@ -61,11 +61,11 @@ export default function Signup() {
 
               {/* Input Fields Container */}
 
-              <div className="space-y-5 mb-5">
+              <div className="space-y-5 mb-10 gap-2 flex flex-col">
 
                 {/* Full name Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     className="text-[20px] font-semibold text-black"
@@ -86,7 +86,7 @@ export default function Signup() {
 
                 {/* Email Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     className="text-[20px] font-semibold text-black"
@@ -107,7 +107,7 @@ export default function Signup() {
 
                 {/* Password Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     className="text-[20px] font-semibold text-black"
@@ -147,7 +147,7 @@ export default function Signup() {
 
                 {/* Confirm Password Field */}
 
-                <div>
+                <div className="gap-3 flex flex-col">
 
                   <label
                     className="text-[20px] font-semibold text-black"
