@@ -4,10 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
-export default function Signup() {
+export default function SignIn() {
   
   const [showPassword, setShowPassword] = useState(false);
-  const [confirmshowPassword, confirmsetShowPassword] = useState(false);
 
   return (
 
@@ -26,31 +25,31 @@ export default function Signup() {
           <div className="text-center mb-6">
 
             <h1 className="text-[40px] font-bold text-gray-900">
-              Create Your account
+              Welcome back
             </h1>
 
             <p className="text-[#64748B] text-[18px]">
-              Join thousands of learners today
+              Sign in to your account to continue learning{" "}
             </p>
 
           </div>
 
-          {/* Sign UP Card */}
+          {/* Sign In Card */}
 
           <div className="bg-white shadow-md rounded-lg p-8 w-[581px] max-w-md">
 
-            {/* Sign UP Header */}
+            {/* Sign In Header */}
 
             <div className="mb-6 gap-2">
 
-              {/* Sign UP Title */}
+              {/* Sign In Title */}
 
               <h2 className="text-xl font-semibold text-black text-[32px]">
-                Sign Up
+                Sign In
               </h2>
 
               <h2 className=" text-[#64748B] text-[16px]">
-                Create your account to start your learning journey
+                Enter your email and password to access your account
               </h2>
 
             </div>
@@ -63,32 +62,12 @@ export default function Signup() {
 
               <div className="space-y-5 mb-5">
 
-                {/* Full name Field */}
-
-                <div>
-
-                  <label
-                    className="text-[20px] font-semibold text-black"
-                  >
-                    Full Name
-                  </label>
-
-                  {/* Full name Input */}
-
-                  <input
-                    id="fname"
-                    type="Enter your full name"
-                    placeholder="Enter your email"
-                    className="mt-1  w-full px-3 py-2 border border-[#E9EEF4] rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black sm:text-sm"
-                  />
-
-                </div>
-
                 {/* Email Field */}
 
                 <div>
 
                   <label
+                    htmlFor="email"
                     className="text-[20px] font-semibold text-black"
                   >
                     Email
@@ -110,6 +89,7 @@ export default function Signup() {
                 <div>
 
                   <label
+                    htmlFor="password"
                     className="text-[20px] font-semibold text-black"
                   >
                     Password
@@ -145,46 +125,6 @@ export default function Signup() {
 
                 </div>
 
-                {/* Confirm Password Field */}
-
-                <div>
-
-                  <label
-                    className="text-[20px] font-semibold text-black"
-                  >
-                   Confirm Password
-                  </label>
-
-                  <div className="relative">
-                    
-                    {/* Password Input */}
-
-                    <input
-                      id="password"
-                      type={confirmshowPassword ? "text" : "password"}
-                      placeholder="Confirm your password"
-                      className="mt-1  w-full px-3 py-2 border border-[#64748B] rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black sm:text-sm"
-                    />
-
-                    {/* Show/Hide Password Icon */}
-
-                    <button
-                      type="button"
-                      onClick={() => confirmsetShowPassword(!confirmshowPassword)}
-                      className="absolute inset-y-0 right-3 flex items-center text-gray-500"
-                    >
-                      {confirmshowPassword ? (
-                        <AiOutlineEyeInvisible className="w-5 h-5" />
-                      ) : (
-                        <AiOutlineEye className="w-5 h-5" />
-                      )}
-
-                    </button>
-
-                  </div>
-
-                </div>
-
               </div>
 
               {/* Submit Button */}
@@ -193,7 +133,7 @@ export default function Signup() {
                 type="submit"
                 className="w-full bg-black text-white py-2 rounded-lg shadow hover:bg-gray-800 transition"
               >
-                Create Account
+                Sign In
 
               </button>
 
@@ -203,13 +143,13 @@ export default function Signup() {
 
             <p className="mt-4 text-[16px] text-center text-[#64748B]">
 
-              Already have an account?{" "}
+              Don’t have an account?{" "}
 
               <Link
-                href="#"
+                href="/Signup"
                 className="font-semibold text-[#020817] ext-[16px]"
               >
-                Sign in here
+                Sign up here
               </Link>
 
             </p>
