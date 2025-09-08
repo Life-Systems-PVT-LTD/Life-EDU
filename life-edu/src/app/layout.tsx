@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import { Sign } from "crypto";
-import Signin from "@/components/Signin/Signin";
+import Signin from "@/app/(login)/Signin/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,9 +35,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
         <div>
 
-          {/* <Header/> */}
-
-          <Signin/>
+          <Header/>
 
         </div>
 
