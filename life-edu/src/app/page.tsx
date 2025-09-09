@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* hero section */}
 
-        <div className="bg-linear-to-r items-center from-[#1E53DB] to-[#56E29C] flex lg:flex-row flex-col-reverse md:flex-row p-10 lg:justify-between md:justify-between gap-3 lg:h-[65vh]">
+        <div className="bg-linear-to-r items-center from-[#1E53DB] to-[#56E29C] flex lg:flex-row flex-col-reverse md:flex-row p-10 lg:justify-evenly md:justify-between gap-3 lg:h-[65vh]">
 
           {/* description section */}
 
@@ -70,7 +70,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:p-8 p-5 mt-9 mb-5">
 
-          <div className="flex lg:flex-row flex-col-reverse items-center justify-between bg-linear-to-r from-[#2C60C2] to-[#32B34E] p-8 rounded-sm">
+          <div className="flex lg:flex-row flex-col-reverse items-center justify-evenly bg-linear-to-r from-[#2C60C2] to-[#32B34E] p-8 rounded-sm">
 
             {/* description */}
 
