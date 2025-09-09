@@ -43,7 +43,7 @@ function Header() {
                     <div className='lg:flex flex-row gap-12 hidden'>
 
                         <Link href={"#"} className='text-md font-semibold text-[#020817]'>Courses</Link>
-                        <Link href={"#"} className='text-md font-semibold text-[#020817]'>About</Link>
+                        <Link href={"/aboutus"} className='text-md font-semibold text-[#020817]'>About</Link>
                         <Link href={"#"} className='text-md font-semibold text-[#020817]'>Contact</Link>
 
                     </div>
