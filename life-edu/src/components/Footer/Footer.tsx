@@ -133,7 +133,7 @@ function Footer() {
                     <div className='flex flex-col items-center mt-3'>
 
                         <span className='text-[14px] tracking-widest text-[#64748B] font-semibold'>&copy;&nbsp;2025 Life Edu. All rights reserved.</span>
-                        <span className='text-[13px] tracking-wide text-[#64748B] font-semibold'>Designed & Developed By Life Systems.</span>
+                        <span className='text-[13px] tracking-wide text-[#64748B] font-semibold'>Designed & Developed By&nbsp;<Link href={'https://life-systems.vercel.app/'}>Life Systems.</Link></span>
 
                     </div>
 

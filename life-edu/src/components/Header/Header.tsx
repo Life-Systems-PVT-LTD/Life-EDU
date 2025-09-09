@@ -20,7 +20,7 @@ function Header() {
 
             {/* main container */}
 
-            <div className='flex flex-col mb-9 p-4 bg-[#FFFFFF] backdrop-blur-lg opacity-90 backdrop-saturate-100 backdrop-contrast-100 fixed w-full top-0 left-0 right-0'>
+            <div className='flex flex-col mb-9 p-4 bg-[#FFFFFF] backdrop-blur-lg opacity-90 backdrop-saturate-100 backdrop-contrast-100 fixed w-full top-0 left-0 right-0 z-50'>
 
                 {/* sub container */}
 
