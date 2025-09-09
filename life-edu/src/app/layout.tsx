@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,17 +26,15 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
   return (
 
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
 
-      <body className={`${inter.variable} antialiased`} >
+      <body suppressHydrationWarning className={`${inter.variable} antialiased min-h-screen flex flex-col`} >        
 
-        <div>
+        <div className="flex-grow">
 
-          <Header/>
+          {children}
 
-        </div>
-
-        {children}
+        </div>       
 
       </body>
 
