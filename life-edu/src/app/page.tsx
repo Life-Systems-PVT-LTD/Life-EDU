@@ -8,11 +8,7 @@ export default function Home() {
 
     <>
 
-      <div>
-
-        <Header />
-
-      </div>
+      <Header />
 
       {/* main container */}
 
@@ -381,11 +377,7 @@ export default function Home() {
 
       {/* main container */}
 
-      <div>
-
-        <Footer />
-
-      </div>
+      <Footer />
 
     </>
 
